@@ -1,0 +1,13 @@
+/* @import './base.css'; */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* 用于解决与组件库的样式冲突 */
+@layer base {
+  button,
+  [type='button'],
+  [type='reset'],
+  [type='submit'] {
+    background-color: var(--el-button-bg-color);
+  }
+}
